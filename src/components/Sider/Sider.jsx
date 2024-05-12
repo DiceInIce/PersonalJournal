@@ -47,7 +47,7 @@ const Sider = ({ data, addItem, onSelectItem }) => {
     <div className='sider-wrapper'>
       <img src={Logo} alt="" className='sider__logo' />
 
-      <button className='card-btn new' onClick={openModal}>
+      <button className='btn new accent' onClick={openModal}>
         <img src={Plus} alt="" />
         Новое воспоминание
       </button>

@@ -1,0 +1,92 @@
+/* Не получается адекватный адаптив,
+  беда с гридами в desc */
+
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 0 50px;
+  width: clamp(20rem, 7.75rem + 61.25vw, 81.25rem);
+}
+
+.layout__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.layout__header h2 {
+  margin: 0;
+}
+
+.layout__desc>div+div {
+  padding-top: 20px;
+}
+
+.desc__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  text-align: left;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  padding-right: clamp(10rem, -2rem + 60vw, 70rem);
+}
+
+.desc__item p {
+  font-family: 'SourseSansProRegular';
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.layout__body {
+  font-family: 'SourseSansProRegular';
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #fff;
+  padding: 10px 0;
+  text-wrap: wrap;
+}
+
+.textarea {
+  font-family: 'SourseSansProRegular';
+  width: 100%;
+  padding: 25px 10px;
+  font-size: 16px;
+  min-height: 424px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #1f1f1f;
+  line-height: 175%;
+  margin-bottom: 20px;
+
+}
+
+.textarea:focus {
+  border-color: #2d333a;
+  outline: none;
+}
+
+.layout__body:focus {
+  border-color: #14161827;
+  outline: none;
+}
+
+.layout__footer {
+  display: flex;
+  gap: 20px;
+}
+
+.layout-empty {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px ;
+  font-size: clamp(0.75rem, 0.4rem + 1.75vw, 2.5rem);
+}

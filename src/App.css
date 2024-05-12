@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'SourseSansProRegular';
+  src: url('../src/fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('../src/fonts/SourceSansPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourseSansProSemiBold';
+  src: url('../src/fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+    url('../src/fonts/SourceSansPro-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'SourseSansProSemiBold', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #181818;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr 2.3fr;
+  margin: 0;
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+}

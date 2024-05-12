@@ -1,0 +1,41 @@
+.journal-form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.journal-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  align-items: flex-start;
+}
+
+.journal-form p {
+  margin: 0;
+  align-self: start;
+}
+
+.journal-form__title {
+  height: 40px;
+}
+
+.journal-form__date {
+  height: 40px;
+  width: 172px;
+}
+
+.journal-form__desc {
+  height: 40px;
+}
+
+.journal-form__mark {
+  height: 40px;
+}
+
+.journal-form__btn {
+  margin: 25px 25px;
+}
+
+/* .journal-form__textarea {} */

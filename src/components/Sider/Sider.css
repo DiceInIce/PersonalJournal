@@ -1,0 +1,20 @@
+.sider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  align-items: center;
+}
+
+.sider__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sider__logo {
+  display: flex;
+  height: 32px;
+  margin-right: auto;
+}

@@ -1,0 +1,52 @@
+.journal-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+
+  font-family: inherit;
+  border-radius: 3px;
+
+  color: white;
+
+  line-height: normal;
+
+  max-height: 100px;
+  width: 360px;
+
+  white-space: nowrap;     /* Не получается поставить ... если не влезает текст */
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+
+.journal-item__header {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.56;
+  margin: 0;
+}
+
+.journal-item__body {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+}
+
+.journal-item__date {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.journal-item__text {
+  font-family: 'SourseSansProRegular';
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
